@@ -27,8 +27,8 @@ public class Totem implements FlightDataObserver {
 
     @Override
     public void update(FlightData flight) {
+        flights.removeIf(f -> f.getFlightNumber().equals(flight.getFlightNumber()));
         if (isInterested(flight)) flights.add(flight);
-        else flights.removeIf(f -> f.getFlightNumber().equals(flight.getFlightNumber()));
 
         view.clearBuffer();
 
