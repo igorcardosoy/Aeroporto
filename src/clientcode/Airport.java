@@ -17,9 +17,9 @@ public class Airport {
 
     public void run() {
 
-        collection.register(new Totem("Totem - Sala Embarque", new TotemPanelView(), TakingOff.getInstance()));
+        collection.register(new Totem("Totem - Sala Embarque", new TotemPanelView(), Boarding.getInstance()));
         collection.register(new Totem("Totem - Sala de Desembarque", new TotemPanelView(), Arriving.getInstance()));
-        collection.register(new Totem("Totem - Embarque e Desembarque", new TotemPanelView(), Arriving.getInstance(), TakingOff.getInstance()));
+        collection.register(new Totem("Totem - Embarque e Desembarque", new TotemPanelView(), Arriving.getInstance(), Boarding.getInstance()));
 
         int option;
         do{
