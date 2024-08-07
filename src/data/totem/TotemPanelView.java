@@ -1,6 +1,7 @@
 package data.totem;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class TotemPanelView implements ITotemView{
 
@@ -41,6 +42,7 @@ public class TotemPanelView implements ITotemView{
         frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 300);
+        frame.setAlwaysOnTop(true);
         frame.setVisible(true);
     }
 
